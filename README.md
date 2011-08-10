@@ -25,12 +25,12 @@ Enable the plugin in collectd.conf by adding:
 
 Configure the plugin to match your cabron configuration.
 
-   <Plugin write_graphite>
-     <Carbon "local-agent">
-       Host "localhost"
-       Port 2003
-       Prefix "collectd"
-     </Carbon>
-   </Plugin>
+    <Plugin write_graphite>
+      <Carbon "local-agent">
+        Host "localhost"
+        Port 2003
+        Prefix "collectd"
+      </Carbon>
+    </Plugin>
 
 Restart collectd to load the new plugin.

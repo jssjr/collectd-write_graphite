@@ -27,7 +27,7 @@ Enable the plugin in collectd.conf by adding:
 
     LoadPlugin write_graphite
 
-Configure the plugin to match your cabron configuration.
+Configure the plugin to match your carbon configuration.
 
     <Plugin write_graphite>
       <Carbon "backend1">

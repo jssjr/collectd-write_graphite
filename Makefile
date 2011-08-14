@@ -25,8 +25,13 @@ clean:
 	mkdir -p build
 	mkdir -p work
 	( if [ ! -d $(COLLECTD_SRC)/src ] ; then \
+		if which fetch ; then \
+			DOWNLOAD_TOOL=`which fetch` ; \
+		elif which wget ; then \
+			DOWNLOAD_TOOL=`which wget` ; \
+		fi ; \
 		cd work ; \
-		$(FETCH) http://collectd.org/files/collectd-$(COLLECTD_VERSION).tar.gz ; \
+		$${DOWNLOAD_TOOL} http://collectd.org/files/collectd-$(COLLECTD_VERSION).tar.gz ; \
 		tar zxvf collectd-$(COLLECTD_VERSION).tar.gz ; \
 		cd collectd-$(COLLECTD_VERSION) ; \
 		if [ ! -f libtool ] ; then \

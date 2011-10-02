@@ -14,9 +14,6 @@ install: all
 	$(LIBTOOL) --mode=install --finish /usr/bin/install \
 		-c write_graphite.la $(COLLECTD_PREFIX)/lib/collectd
 
-test: Makefile
-	@echo $^
-
 clean:
 	rm -rf .libs
 	rm -rf build

@@ -11,8 +11,10 @@ CFLAGS?=-DNDEBUG -O3
 all: .INIT write_graphite.la
 
 install: all
-	$(LIBTOOL) --mode=install --finish /usr/bin/install \
-		-c write_graphite.la $(COLLECTD_PREFIX)/lib/collectd
+	$(LIBTOOL) --mode=install /usr/bin/install -c write_graphite.la \
+		$(COLLECTD_PREFIX)/lib/collectd
+	$(LIBTOOL) --finish \
+		$(COLLECTD_PREFIX)/lib/collectd
 
 clean:
 	rm -rf .libs

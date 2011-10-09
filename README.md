@@ -51,7 +51,11 @@ Restart collectd to load the new plugin.
 
 *    Prefix *required*
 
-     The prefix string inserted before the hostname that is sent to Carbon. Use dots (.) to create folders. A good choise might be "collectd" or "servers"
+     The prefix string prepended to the hostname that is sent to Carbon. Use dots (.) to create folders. A good choise might be "collectd" or "servers"
+
+*    Postfix
+
+     The postfix string appended to the hostname sent to Carbon.
 
 *    DotCharacter
 

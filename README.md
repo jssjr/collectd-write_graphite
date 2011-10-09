@@ -38,3 +38,21 @@ Configure the plugin to match your carbon configuration.
     </Plugin>
 
 Restart collectd to load the new plugin.
+
+### Available Carbon Configuration Directives
+
+*   Host *required*
+
+    The hostname of the Carbon collection agent.
+
+*   Port *required*
+
+    The port used by the Carbon collect agent.
+
+*   Prefix *required*
+
+    The prefix string inserted before the hostname that is sent to Carbon. Use dots (.) to create folders. A good choise might be "collectd" or "servers"
+
+*   DotCharacter
+
+    The character used to replace dots (.) in a hostname or datasource name. Defaults to an underscore.

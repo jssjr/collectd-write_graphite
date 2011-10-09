@@ -33,7 +33,7 @@ Configure the plugin to match your carbon configuration.
       <Carbon>
         Host "localhost"
         Port 2003
-        Prefix "collectd"
+        Prefix "collectd."
       </Carbon>
     </Plugin>
 
@@ -49,9 +49,9 @@ Restart collectd to load the new plugin.
 
      The port used by the Carbon collect agent.
 
-*    Prefix *required*
+*    Prefix
 
-     The prefix string prepended to the hostname that is sent to Carbon. Use dots (.) to create folders. A good choise might be "collectd" or "servers"
+     The prefix string prepended to the hostname that is sent to Carbon. Use dots (.) to create folders. A good choise might be "collectd." or "servers."
 
 *    Postfix
 

@@ -32,7 +32,7 @@ Configure the plugin to match your carbon configuration.
     <Plugin write_graphite>
       <Carbon>
         Host "localhost"
-        Port 2003
+        Port "2003"
         Prefix "collectd."
       </Carbon>
     </Plugin>

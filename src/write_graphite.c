@@ -380,12 +380,6 @@ static int wg_format_name (char *ret, int ret_len,
     assert (plugin != NULL);
     assert (type != NULL);
 
-    if (prefix == NULL)
-        prefix = "";
-
-    if (postfix == NULL)
-        postfix = "";
-
     if ((n_hostname = malloc(strlen(hostname)+1)) == NULL)
     {
         ERROR ("Unable to allocate memory for normalized hostname buffer");

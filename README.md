@@ -3,6 +3,8 @@ write\_graphite
 
 An output plugin for [collectd](http://collectd.org).
 
+*NOTE* This work has been merged into [collectd](http://collectd.org/) as of version 5.1. I strongly suggest using the native client, as octo has done great things with it and I no longer plan on maintaining this code. Thanks!
+
 Description
 -----------
 
